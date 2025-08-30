@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    button.save {
+      background-color: #4a90e2;
+      color: white;
+    }
+    button.clear {
+      background-color: #ccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #4a90e2;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #e6f0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Registration</h2>
+
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="text" id="studentId" placeholder="Student ID">
+      <input type="text" id="phone" placeholder="Mobile Number">
+      <input type="email" id="email" placeholder="Email">
+    </form>
+
+    <button class="save" type="button" onclick="addStudent()">Save</button>
+    <button class="clear" type="reset" onclick="document.getElementById('studentForm').reset()">Clear</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Serial</th>
+          <th>Name</th>
+          <th>Student ID</th>
+          <th>Mobile Number</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody">
+        <!-- Students will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>

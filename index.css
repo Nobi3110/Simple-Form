@@ -1,0 +1,40 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 9999px; /* fully rounded */
+  outline: none;
+  margin-top: 0.25rem;
+}
+
+.input-field:focus {
+  ring: 2px;
+  ring-color: #60a5fa;
+}
+
+.btn-clear {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid #9ca3af;
+  color: #4b5563;
+  background-color: white;
+}
+
+.btn-clear:hover {
+  background-color: #f3f4f6;
+}
+
+.btn-save {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #1d4ed8;
+}
